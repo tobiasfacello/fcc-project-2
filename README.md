@@ -10,4 +10,4 @@ https://tobiasfacello-fcc-project-2.netlify.app/
 <br><br>
 <img src="images/fcc-proyecto-2.png" alt="FreeCodeCamp - Survey Form:"/>
 
-CodePen (Solution link): 
+CodePen (Solution link): https://codepen.io/tobiasfacello/pen/poPNZao
