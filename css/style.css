@@ -4,7 +4,7 @@
     --av-color: #0f5651;
     --bordo-color: #c20534;
     --title-bkgd-color: rgba(194, 5, 52, 0.65);
-    --container-color: rgba(157,196,214, 0.65);
+    --container-color: rgba(157, 196, 214, 0.65);
 }
 
 * {
@@ -49,7 +49,7 @@ h3 {
     color: var(--f-color);
     background-color: var(--av-color);
     text-shadow: var(--zero-color) 0px 2px 2px;
-} 
+}
 
 h5 {
     font-size: 20px;
@@ -117,24 +117,24 @@ footer .copyright {
 
 
 .container-datos input {
-    width: 500px;
+    width: 200px;
     font-size: 20px;
 }
 
 
 
 .container-contacto #cod-tel {
-    width: 200px;
+    width: 50px;
     font-size: 20px;
 }
 
 .container-contacto #num-tel {
-    width: 300px;
+    width: 150px;
     font-size: 20px;
 }
 
 .container-contacto #email {
-    width: 500px;
+    width: 340px;
     font-size: 20px;
 }
 
@@ -142,14 +142,14 @@ footer .copyright {
 
 .salud__grupo {
     font-size: 20px;
-    width: 500px;
+    width: 375px;
 }
 
 
 
 .container-patologias {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .container-patologias label {
