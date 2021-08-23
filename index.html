@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<!-- *Datos* -->
+    <!-- *Datos* -->
     <title>FreeCodeCamp - Survey Form: Registración de Vacunación COVID-19</title>
     <meta charset="UTF-8">
     <meta name="description" content="Página formulario de encuesta">
     <meta name="author" content="Tobias Facello">
     <meta name="keywords" content="Survey form, Desarrollo Web, Front-End Developer, Proyectos">
-<!-- *Estilos* -->
+    <!-- *Estilos* -->
+    <link rel="icon" href="images/icon-form.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/d70a1f20c5.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="container">
         <div class="content-container">
             <header>
                 <h1 id="title">Formulario de Registración de Vacunación COVID-19</h1>
                 <div>
-                    <p id="description">Complete el formulario y registre su consulta para recibir la vacuna para COVID-19.</p>
-                    <p>Argentina usa este sistema para registrar la voluntad de ser vacunado por parte de los ciudadanos.</p>
+                    <p id="description">Complete el formulario y registre su consulta para recibir la vacuna para
+                        COVID-19.</p>
+                    <p>Argentina usa este sistema para registrar la voluntad de ser vacunado por parte de los
+                        ciudadanos.</p>
                 </div>
-        </header>
+            </header>
             <main>
                 <div class="form-container">
                     <form id="survey-form">
@@ -33,17 +38,20 @@
                             <label id="name-label" for="name">Nombre * </label>
                             <input class="form__input" type="text" id="name" placeholder="Ingresá tu nombre" required>
                             <br>
-    
+
                             <label for="last-name"> Apellido * </label>
-                            <input class="form__input" type="text" id="last-name" placeholder="Ingresá tu apellido" required>
+                            <input class="form__input" type="text" id="last-name" placeholder="Ingresá tu apellido"
+                                required>
                             <br>
-                            
+
                             <label id="number-label" for="age"> Edad * </label>
-                            <input class="form__input" type="number" id="age" placeholder="Ingresá tu edad" required min="18" max="99">
+                            <input class="form__input" type="number" id="age" placeholder="Ingresá tu edad" required
+                                min="18" max="99">
                             <br>
-    
+
                             <label for="number">DNI * </label>
-                            <input class="form__input" type='number' id="number" placeholder="Ingresá tu DNI" required min="1000000" max="50000000" pattern="[0-9]{8}">
+                            <input class="form__input" type='number' id="number" placeholder="Ingresá tu DNI" required
+                                min="1000000" max="50000000" pattern="[0-9]{8}">
                         </div>
                         <br>
 
@@ -51,10 +59,13 @@
                             <h2>Datos de contacto</h2>
                             <br>
                             <label for="cod-tel">Teléfono *</label>
-                            <input class="form__input" type="tel" id="cod-tel" placeholder="Cód. de Área" pattern="[0-9]{4}"><input class="form__input" type="tel" id="num-tel" placeholder="Número" pattern="[0-9]{6}">
-                            <br>                            
+                            <input class="form__input" type="tel" id="cod-tel" placeholder="Cód. de Área"
+                                pattern="[0-9]{4}"><input class="form__input" type="tel" id="num-tel"
+                                placeholder="Número" pattern="[0-9]{6}">
+                            <br>
                             <label id="email-label" for="email">Email * </label>
-                            <input class="form__input" type='email' id="email" placeholder="Ingresá tu email" required pattern='[^@]+@[^@]+.[a-zA-Z]{2,6}'>
+                            <input class="form__input" type='email' id="email" placeholder="Ingresá tu email" required
+                                pattern='[^@]+@[^@]+.[a-zA-Z]{2,6}'>
                         </div>
                         <br>
 
@@ -70,7 +81,8 @@
                                 <option value="personal-educativo">Personal educativo</option>
                                 <option value="mayores">Persona mayor de 60 años</option>
                                 <option value="riesgo">Persona de riesgo (entre 18 y 59 años)</option>
-                                <option value="sin-riesgo">Persona sin patologías de riesgo (entre 18 y 59 años)</option>
+                                <option value="sin-riesgo">Persona sin patologías de riesgo (entre 18 y 59 años)
+                                </option>
                             </select>
                             <br>
 
@@ -116,13 +128,15 @@
                                     </div>
                                     <div>
                                         <input type="checkbox" name="input-activa" value='reciente-activa'>
-                                        <label for="input-activa">Paciente con diagnóstico reciente o enfermedad activa</label>
+                                        <label for="input-activa">Paciente con diagnóstico reciente o enfermedad
+                                            activa</label>
                                     </div>
                                 </form>
                             </div>
 
                             <div class="container-sintomas">
-                                <h3>¿Presenta o ha presentado alguno de los siguientes síntomas en los últimos 14 días? *</h3>
+                                <h3>¿Presenta o ha presentado alguno de los siguientes síntomas en los últimos 14 días?
+                                    *</h3>
                                 <br>
                                 <div class="sintomas-graves">
                                     <h3>Síntomas graves</h3>
@@ -131,7 +145,7 @@
                                         <li>Dolor o presión en el pecho</li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="sintomas-habituales">
                                     <h3>Síntomas habituales</h3>
                                     <ul>
@@ -154,25 +168,31 @@
                             </div>
 
                             <br>
-                                
+
                             <div class="form-group salud__sintomas">
                                 <h5><u>Seleccione la opción correspondiente:</u></h5>
                                 <label><input name="sintomas-usuario" type="radio" value="sintomas-si">Sí</label>
                                 <label><input name="sintomas-usuario" type="radio" value="sintomas-no">No</label>
-                                <label><input name="sintomas-usuario" type="radio" value="sintomas-no-seguro">No estoy seguro</label>
+                                <label><input name="sintomas-usuario" type="radio" value="sintomas-no-seguro">No estoy
+                                    seguro</label>
                             </div>
                             <br>
                             <div class="container-sugerencias-sintomas">
                                 <div class="salud__sugerencias sintomas-graves">
-                                    <p>Si presentas <em>síntomas graves</em>, busca atención médica inmediata. Sin embargo, siempre debes llamar a tu doctor o centro de atención sanitaria antes de presentarte en el lugar en cuestión.</p>
+                                    <p>Si presentas <em>síntomas graves</em>, busca atención médica inmediata. Sin
+                                        embargo, siempre debes llamar a tu doctor o centro de atención sanitaria antes
+                                        de presentarte en el lugar en cuestión.</p>
                                 </div>
                                 <br>
                                 <div class="salud__sugerencias sintomas-habituales">
-                                    <p>Si presentas <em>síntomas habituales</em>, de media, las personas que se contagian empiezan a presentar síntomas en un plazo de 5 a 6 días desde que se infectan, pero pueden tardar hasta 14.</p>
+                                    <p>Si presentas <em>síntomas habituales</em>, de media, las personas que se
+                                        contagian empiezan a presentar síntomas en un plazo de 5 a 6 días desde que se
+                                        infectan, pero pueden tardar hasta 14.</p>
                                 </div>
                                 <br>
                                 <div class="salud__sugerencias sintomas-menos-comunes">
-                                    <p>Si presentas <em>síntomas menos comunes</em>, lo recomendable es que las personas que tengan un buen estado de salud general se confinen en casa.</p>
+                                    <p>Si presentas <em>síntomas menos comunes</em>, lo recomendable es que las personas
+                                        que tengan un buen estado de salud general se confinen en casa.</p>
                                 </div>
                             </div>
                             <br>
@@ -180,7 +200,8 @@
                             <h3>Si desea, puede realizar un comentario/pregunta en particular:</h3>
                             <br>
                             <div class="form-group container-comentario">
-                                <textarea class="comentario__textarea" placeholder="Ingrese su comentario/pregunta..." name="comment"></textarea>
+                                <textarea class="comentario__textarea" placeholder="Ingrese su comentario/pregunta..."
+                                    name="comment"></textarea>
                             </div>
                             <br>
 
@@ -191,10 +212,11 @@
                     </form>
                 </div>
             </main>
-        </div>        
+        </div>
         <footer>
             <h5 class="copyright">Made by Tobías Facello © 2021</h5>
         </footer>
     </div>
 </body>
+
 </html>
